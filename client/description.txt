@@ -1,0 +1,40 @@
+NAME : Ajay H
+START_DATE : 20-01-2026
+END_DATE : 30-01-2026
+TITLE : TFTP Server and Client
+DESCRIPTION:
+This project implements a Trivial File Transfer Protocol (TFTP) client–server application using UDP socket programming. 
+The server runs continuously in the background and handles client requests using UDP communication with unique port numbers.
+The application allows the user to choose between GET and PUT operations, where GET is used to download files from the server 
+and PUT is used to upload files to the server. The implementation supports both octet mode, which transfers raw binary data 
+without modification,and netascii mode, which performs ASCII text conversion to ensure compatibility across different systems.
+During file transfer, data is exchanged in fixed-size blocks, and each block is acknowledged to ensure reliable and successful
+transmission.
+
+SAMPLE INPUT & OUTPUT:
+CLIENT:-
+Enter the option
+1. Connect
+2. Put
+3. Get
+4. Mode
+5. Exit
+1
+Enter the ip address :127.0.0.1
+Enter the port number :6969
+Enter the option
+1. Connect
+2. Put
+3. Get
+4. Mode
+5. Exit
+2
+Enter the filename :sample.txt
+
+SERVER:-
+Waiting for a client to connect.....
+mode-> 2
+mode flag > 0
+file_name-> sample.txt
+TFTP Server listening on port 6969...
+Waiting for a client to connect.....
